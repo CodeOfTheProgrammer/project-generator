@@ -1,0 +1,20 @@
+extends layout
+
+block descriptionMeta
+    meta(name='description' content='{{ NAME }} website')
+
+block structuredData
+    script(type='application/ld+json').
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "{{ NAME }}",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "{{ EMAIL }}",
+                "contactType": "Customer service"
+            }
+        }
+
+block content
+    h1 Get started on {{ NAME }}!

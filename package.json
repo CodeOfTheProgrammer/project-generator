@@ -1,0 +1,22 @@
+{
+  "name": "project-generator",
+  "version": "0.1.0",
+  "description": "Generate projects from templates",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "generate": "./index.js"
+  },
+  "author": "Eric Turner <eric@ericturner.dev> (https://github.com/CodeOfTheProgrammer/)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "email-validator": "^2.0.4",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.0",
+    "replace-in-file": "^4.2.0"
+  }
+}
